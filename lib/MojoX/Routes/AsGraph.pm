@@ -1,5 +1,5 @@
 package MojoX::Routes::AsGraph;
-our $VERSION = '0.002';
+our $VERSION = '0.003';
 
 
 use warnings;
@@ -73,7 +73,7 @@ MojoX::Routes::AsGraph - Create a graph from a MojoX::Routes object
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 

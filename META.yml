@@ -11,4 +11,4 @@ requires:
   Test::More: '0'
 resources:
   repository: http://github.com/melo/mojox-routes-asgraph/
-version: '0.002'
+version: '0.003'
