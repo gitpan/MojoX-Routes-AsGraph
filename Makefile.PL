@@ -1,13 +1,20 @@
-use inc::Module::Install;
 
-name     'MojoX-Routes-AsGraph';
-all_from 'lib/MojoX/Routes/AsGraph.pm';
-repository 'http://github.com/melo/mojox-routes-asgraph/';
+use strict;
+use warnings;
 
-requires 'Graph::Easy' => 0;
-build_requires 'Test::More';
+use ExtUtils::MakeMaker;
 
-auto_install;
-
-WriteAll;
-
+WriteMakefile(
+  DISTNAME  => 'MojoX-Routes-AsGraph',
+  NAME      => 'MojoX::Routes::AsGraph',
+  AUTHOR    => 'Pedro\ Melo\ \<melo\@cpan\.org\>',
+  ABSTRACT  => 'Create a graph from a MojoX::Routes object',
+  VERSION   => '0.002',
+  EXE_FILES => [ qw() ],
+  (eval { ExtUtils::MakeMaker->VERSION(6.21) } ? (LICENSE => 'perl') : ()),
+  PREREQ_PM    => {
+    "Test::More" => '0',
+    "Mojo" => '0',
+    "Graph::Easy" => '0',
+  },
+);

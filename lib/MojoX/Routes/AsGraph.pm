@@ -1,10 +1,10 @@
 package MojoX::Routes::AsGraph;
+our $VERSION = '0.002';
+
 
 use warnings;
 use strict;
 use Graph::Easy;
-
-our $VERSION = '0.01';
 
 sub graph {
   my ($self, $r) = @_;
@@ -73,8 +73,7 @@ MojoX::Routes::AsGraph - Create a graph from a MojoX::Routes object
 
 =head1 VERSION
 
-Version 0.01
-
+version 0.002
 
 =head1 SYNOPSIS
 
