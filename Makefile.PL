@@ -9,7 +9,7 @@ WriteMakefile(
   NAME      => 'MojoX::Routes::AsGraph',
   AUTHOR    => 'Pedro\ Melo\ \<melo\@cpan\.org\>',
   ABSTRACT  => 'Create a graph from a MojoX::Routes object',
-  VERSION   => '0.003',
+  VERSION   => '0.04',
   EXE_FILES => [ qw() ],
   (eval { ExtUtils::MakeMaker->VERSION(6.21) } ? (LICENSE => 'perl') : ()),
   PREREQ_PM    => {
